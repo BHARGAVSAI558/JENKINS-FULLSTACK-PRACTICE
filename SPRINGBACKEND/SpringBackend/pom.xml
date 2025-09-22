@@ -64,7 +64,11 @@
 	</dependencies>
 
 	<build>
+<<<<<<< HEAD
 	<finalName>springbootbookapi</finalName>
+=======
+			<finalName>springbootbookapi</finalName>
+>>>>>>> origin/main
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
