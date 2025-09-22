@@ -1,0 +1,5 @@
+package com.fsd.backend.repository;
+
+public class BookRepository {
+
+}

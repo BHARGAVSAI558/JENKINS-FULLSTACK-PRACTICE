@@ -1,0 +1,192 @@
+/* ==== Global ==== */
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== Container ==== */
+.book-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==== Title with Book Image ==== */
+.book-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.book-title-image {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.book-title h2 {
+  font-size: 2rem;
+  color: #2d3436;
+  margin: 0;
+}
+
+
+/* ==== Form ==== */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.form-grid input,
+.form-grid select {
+  padding: 12px 14px;
+  border: 1px solid #dfe6e9;
+  border-radius: 12px;
+  background: #fdfdfd;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.form-grid input:focus,
+.form-grid select:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 6px rgba(108, 92, 231, 0.4);
+  outline: none;
+}
+
+/* ==== Buttons ==== */
+.btn-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.btn-blue {
+  background: linear-gradient(135deg, #74b9ff, #0984e3);
+  color: white;
+}
+
+.btn-green {
+  background: linear-gradient(135deg, #55efc4, #00b894);
+  color: white;
+}
+
+.btn-red {
+  background: linear-gradient(135deg, #ff7675, #d63031);
+  color: white;
+}
+
+.btn-gray {
+  background: linear-gradient(135deg, #b2bec3, #636e72);
+  color: white;
+}
+
+/* ==== Messages ==== */
+.message-banner {
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+  animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.message-banner.success {
+  background: #eafaf1;
+  color: #00b894;
+  border: 1px solid #55efc4;
+}
+
+.message-banner.error {
+  background: #fdeaea;
+  color: #d63031;
+  border: 1px solid #ff7675;
+}
+
+/* ==== Table ==== */
+.table-wrapper {
+  margin-top: 25px;
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background: linear-gradient(135deg, #6c5ce7, #341f97);
+  color: white;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+tbody tr:hover {
+  background: #f1f2f6;
+  transition: background 0.2s ease;
+}
+
+/* ==== Action Buttons ==== */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
