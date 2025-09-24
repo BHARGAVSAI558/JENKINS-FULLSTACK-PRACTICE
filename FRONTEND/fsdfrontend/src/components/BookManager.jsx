@@ -55,7 +55,7 @@ const BookManager = () => {
       fetchAllBooks();
       resetForm();
     } catch (error) {
-      setMessage('Error adding book.');
+      setMessage('Error Adding book.');
     }
   };
 
